@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36631.11
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MotoPlus-test", "MotoPlus-test.vcxproj", "{739A1B4B-325B-4B60-B66E-1675F46F61D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Real_YRC1000|x64 = Real_YRC1000|x64
+		Real_YRC1000|x86 = Real_YRC1000|x86
+		Sim_Debug_YRC1000|x64 = Sim_Debug_YRC1000|x64
+		Sim_Debug_YRC1000|x86 = Sim_Debug_YRC1000|x86
+		Sim_Release_YRC1000|x64 = Sim_Release_YRC1000|x64
+		Sim_Release_YRC1000|x86 = Sim_Release_YRC1000|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Real_YRC1000|x64.ActiveCfg = Real_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Real_YRC1000|x64.Build.0 = Real_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Real_YRC1000|x86.ActiveCfg = Real_YRC1000|Win32
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Real_YRC1000|x86.Build.0 = Real_YRC1000|Win32
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Debug_YRC1000|x64.ActiveCfg = Sim_Debug_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Debug_YRC1000|x64.Build.0 = Sim_Debug_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Debug_YRC1000|x86.ActiveCfg = Sim_Debug_YRC1000|Win32
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Debug_YRC1000|x86.Build.0 = Sim_Debug_YRC1000|Win32
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Release_YRC1000|x64.ActiveCfg = Sim_Release_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Release_YRC1000|x64.Build.0 = Sim_Release_YRC1000|x64
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Release_YRC1000|x86.ActiveCfg = Sim_Release_YRC1000|Win32
+		{739A1B4B-325B-4B60-B66E-1675F46F61D0}.Sim_Release_YRC1000|x86.Build.0 = Sim_Release_YRC1000|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21590870-2BD4-4BFC-A8AD-2796D8201CCA}
+	EndGlobalSection
+EndGlobal

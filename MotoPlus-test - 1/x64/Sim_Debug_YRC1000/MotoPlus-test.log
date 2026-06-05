@@ -1,0 +1,9 @@
+﻿  mpMain.c
+mpMain.obj : error LNK2019: 无法解析的外部符号 mpCreateTask，函数 mpUsrRoot 中引用了该符号
+mpMain.obj : error LNK2019: 无法解析的外部符号 _mpExitUsrRoot，函数 mpUsrRoot 中引用了该符号
+mpMain.obj : error LNK2019: 无法解析的外部符号 mpApplicationInfoNotify，函数 SetApplicationInfo 中引用了该符号
+mpMain.obj : error LNK2019: 无法解析的外部符号 GetBVar，函数 mpTask1 中引用了该符号
+mpMain.obj : error LNK2019: 无法解析的外部符号 SetBVar，函数 mpTask1 中引用了该符号
+LIBCMTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+C:\Program Files (x86)\YASKAWA\MotoPlus SDK 2.0\Sim_YRC1000\latest\lib\MotoPlusSimLibrary.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+F:\桌面\motoplus-test\MotoPlus-test\x64\Sim_Debug_YRC1000\MotoPlus-test.exe : fatal error LNK1120: 6 个无法解析的外部命令

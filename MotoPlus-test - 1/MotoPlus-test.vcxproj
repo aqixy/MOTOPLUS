@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Real_YRC1000|Win32">
+      <Configuration>Real_YRC1000</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Real_YRC1000|x64">
+      <Configuration>Real_YRC1000</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Sim_Debug_YRC1000|Win32">
+      <Configuration>Sim_Debug_YRC1000</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Sim_Debug_YRC1000|x64">
+      <Configuration>Sim_Debug_YRC1000</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Sim_Release_YRC1000|Win32">
+      <Configuration>Sim_Release_YRC1000</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Sim_Release_YRC1000|x64">
+      <Configuration>Sim_Release_YRC1000</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{739a1b4b-325b-4b60-b66e-1675f46f61d0}</ProjectGuid>
+    <RootNamespace>MotoPlus_test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|Win32'">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|Win32'">
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|Win32'" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|x64'" Label="PropertySheets" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|Win32'">
+    <NMakeBuildCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT rebuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT clean</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(projectName).out</NMakeOutput>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);$(Configuration);_MOTOPLUS_APP_REAL;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(MP_SDK_ROOT)$(Configuration)\latest\inc</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Real_YRC1000|x64'">
+    <NMakeBuildCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT rebuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"$(MP_SDK_ROOT)$(Configuration)\MotoPlusSDKBuilder.exe" -CFG "$(Configuration)" -PRJD "$(ProjectDir)\" -PRJNM "$(ProjectName)" -OUTD "$(OutDir)\" -TGT clean</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(projectName).out</NMakeOutput>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);$(Configuration);_MOTOPLUS_APP_REAL;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(MP_SDK_ROOT)$(Configuration)\latest\inc</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <ClCompile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <ClCompile>
+      <SupportJustMyCode>true</SupportJustMyCode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'">
+    <ClCompile>
+      <SupportJustMyCode>true</SupportJustMyCode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|Win32'">
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MPSIM_MOD;WIN32;_DEBUG;_CONSOLE;_MOTOPLUS_APP_SIMULATE;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib\MotoPlusSimLibrary.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <AdditionalOptions>/IGNORE:4098,4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Debug_YRC1000|x64'">
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MPSIM_MOD;WIN32;_DEBUG;_CONSOLE;_MOTOPLUS_APP_SIMULATE;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib\MotoPlusSimLibrary.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <AdditionalOptions>/IGNORE:4098,4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MP_SDK_ROOT)Sim_YRC1000\latest\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|Win32'">
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>MPSIM_MOD;WIN32;NOEBUG;_CONSOLE;_MOTOPLUS_APP_SIMULATE;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib\MotoPlusSimLibrary.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalOptions>/IGNORE:4098,4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Sim_Release_YRC1000|x64'">
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>MPSIM_MOD;WIN32;NOEBUG;_CONSOLE;_MOTOPLUS_APP_SIMULATE;_WRS_KERNEL;MOTOPRO_SUP_API_REV=3;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(MP_SDK_ROOT)Sim_YRC1000\latest\lib\MotoPlusSimLibrary.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalOptions>/IGNORE:4098,4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="funclib.c" />
+    <ClCompile Include="mpMain.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
